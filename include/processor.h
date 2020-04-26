@@ -6,10 +6,10 @@ class Processor {
   float Utilization();  
 
  private:
- float idleTime;
- float totalTime;
- float prevIdleTime;
- float prevTotalTime{0};
+ float prevActive;
+ float prevTotal;
+ float curTotal;
+ float curActive;
 };
 
 #endif
